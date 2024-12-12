@@ -12,9 +12,9 @@ The goal is to deploy AWS resources using Terraform, ensuring the infrastructure
 ## Tasks and Deliverables
 
 ### 1. S3 Bucket Setup
-- Create an S3 bucket to store your Terraform state file (tfstate).
-- Enable versioning on the S3 bucket to track changes in your state file over time.
-- (Optional, Extra Credit): Add a DynamoDB table for state locking to avoid concurrent state updates.
+- Create an S3 bucket to store  Terraform state file (tfstate).
+- Enable versioning on the S3 bucket to track changes in  state file over time.
+- Add a DynamoDB table for state locking to avoid concurrent state updates.
 
 ### 2. VPC and EC2 Instance
 - Set up an EC2 instance in a VPC:
@@ -23,10 +23,10 @@ The goal is to deploy AWS resources using Terraform, ensuring the infrastructure
   - Configure a security group to allow:
     - SSH access on port 22.
     - HTTP/HTTPS traffic on ports 80 and 443 (optional for extra credit).
-  - Use a variable to specify the AMI ID and instance type (e.g., t2.micro for free-tier users).
+  - Use a variable to specify the AMI ID and instance type.
 
 ### 3. Terraform Backend Configuration
-- Configure your Terraform backend to use the created S3 bucket for storing state files.
+- Configure  Terraform backend to use the created S3 bucket for storing state files.
 - Ensure the backend configuration is modular and easy to manage.
 
 ### 4. Variables in tfvars File
@@ -34,13 +34,13 @@ The goal is to deploy AWS resources using Terraform, ensuring the infrastructure
 - Store the actual values in a `terraform.tfvars` file to separate configurations from the main codebase.
 
 ### 5. GitHub Repository
-- Push your Terraform code to a GitHub repository.
-- Your repository must include:
+- Push  Terraform code to a GitHub repository.
+-  repository must include:
   - `main.tf` (Terraform configuration)
   - `variables.tf` (Variables definition)
   - `terraform.tfvars` (Variables values; sensitive data should not be pushed to GitHub)
-  - `backend.tf` (Backend configuration)
-  - `README.md` (Documentation)
+  - `backend.tf` 
+  - `README.md` 
 
 ## How to Use
 1. **Clone the Repository**:
